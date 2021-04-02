@@ -7,6 +7,7 @@ require('database.php');
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&Cinzel">
+<link rel="stylesheet" href="css/style2.css">
 <title>Dashboard</title>
     <style>
         html, body{
@@ -19,7 +20,7 @@ require('database.php');
         width: 100%;
         height: 100%;
         margin: auto;
-        background: url("https://images.pexels.com/photos/169789/pexels-photo-169789.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg") no-repeat 50% 50%;
+        background-color: black;
         top: 0;
         display: table;
         background-size: cover;
@@ -43,7 +44,6 @@ require('database.php');
         }
         .header{
     width: 100%;
-    background-color: rgba(0,0,0,.2);
 }
 
 .header ul{
@@ -114,19 +114,29 @@ require('database.php');
 </head>
 <body>
 <section class="b1">
-<div class="header">
-<ul>
-<li><a href="home.html">Home</a></li>
-<li><a href="inventory.html">Inventory</a></li>
-<li><a href="log1.html">Log Book</a></li>
-<li><a href="login.php">Log In</a></li>
-</ul>
-</div>
+<div class="nav-bar" style="padding-left: 0px;">
+    <span onclick="showMenu()" style="cursor: pointer;"><i class="fa fa-bars fa-2x"  style="color: white;margin-left: 30px;"></i></span>
+  
+    <div class="nav-logo">
+  
+      <img src="./images/logonew.png" />
+    </div>
+          <div class="nav-links" id="nav-links">
+          <a onclick="closeMenu()"><i class="fa fa-close" ></i></a>  
+            <ul>
+            <a href="inventorygoods.html"><li>View Inventory</li></a>
+              <a href="dashboard.php"><li>Manage Inventory</li></a>
+              <a href="logdashboard.php"><li>Access Log Book</li></a>
+              <a href="index.php"><li>Bill Generation</li></a>
+            </ul>
+            <a href="user.html"><button type="button" class="btn">My Profile</button> </a>
+          </div>
+  </div>
 <div class="in1">
 <div class="content">
 <h1>Dashboard</h1>
-<a class= "btn" style="font-size: 30px;" href="view.php">View Records</a>
-<a class= "btn" style="font-size: 30px;" href="insert.php">Insert New Records</a>
+<a class= "btn" style="font-size: 30px;color:black" href="view.php">View Records</a>
+<a class= "btn" style="font-size: 30px;color:black" href="insert.php">Insert New Records</a>
 </div>
 </div>
 </section>

@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&Cinzel">
+    <link rel="stylesheet" href="css/style2.css">
     <style type="text/css">
      body {
-         background-color: #DFCDBB;
+         background-color: black;
          background-position: absolute;
          background-repeat: no-repeat;
          background-size: cover;
@@ -58,7 +59,7 @@
 }
 #wrap {
         width: 80%;
-        color: rgb(14, 14, 14);
+        color: white;
         margin: auto;
         overflow: hidden;
         padding-top: 0px;
@@ -99,14 +100,23 @@ h1{
     <title>LogBook</title>
 </head>
 <body>
-    <div class="header">
-        <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="inventory.html">Inventory</a></li>
-            <li><a href="log1.html">Log Book</a></li>
-            <li><a href="login.php">Log In</a></li>
-        </ul>
+  <div class="nav-bar" style="padding-left: 0px;">
+    <!-- <span onclick="showMenu()" style="cursor: pointer;"><i class="fa fa-bars fa-2x"  style="color: white;margin-left: 30px;"></i></span> -->
+  
+    <div class="nav-logo">
+  
+    <a href="home.html"><img src="./images/logonew.png" /></a>  
     </div>
+          <div class="nav-links" id="nav-links">
+          <a onclick="closeMenu()"><i class="fa fa-close" ></i></a>  
+            <ul>
+              <a href="./home.html"><li>HOME</li></a>
+              <a href="inventory.html"><li>INVENTORY</li></a>
+              <a href="log1.html"><li>LOG BOOK</li></a>
+            </ul>
+            <a href="login.html"><button type="button" class="btn">LOG IN</button> </a>
+          </div>
+  </div>
     <div class="section">
    
 </div>
