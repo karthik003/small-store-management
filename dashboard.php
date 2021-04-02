@@ -134,7 +134,7 @@ require('database.php');
   </div>
 <div class="in1">
 <div class="content">
-<h1>Dashboard</h1>
+<h1>Manage Inventory</h1>
 <a class= "btn" style="font-size: 30px;color:black" href="view.php">View Records</a>
 <a class= "btn" style="font-size: 30px;color:black" href="insert.php">Insert New Records</a>
 </div>
