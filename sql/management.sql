@@ -145,7 +145,7 @@ CREATE TABLE `invoice_user` (
 --
 
 INSERT INTO `invoice_user` (`id`, `username`, `password`, `first_name`, `last_name`, `mobile`, `address`) VALUES
-(111, 'admin', '12345', 'Jenise', 'James', 1236576546, 'India');
+(001, 'admin', '12345', 'Karthik', 'VJ', 9009009009, 'India');
 
 -- --------------------------------------------------------
 
@@ -169,7 +169,7 @@ CREATE TABLE `login` (
 
 INSERT INTO `login` (`name`, `contact`, `address`, `gender`, `username`, `password`, `idproof`) VALUES
 ('sonali', 7726076179, 'nepal', 'female', 'sonaligupta', 'mE039Gp9Lait1Q6WGw06Yb4cikj0b4A/pUZiPVaDCv4=', 'pancardd'),
-('reema', 7426931082, 'sikar', 'female', 'admin', 'Ghjd6pvG5dow53x7xV8eZeWXDuixJMVXSsonUMG4fa4=', 'adharcard');
+('Karthik', 9009009009, 'VJ', 'female', 'admin', 'Ghjd6pvG5dow53x7xV8eZeWXDuixJMVXSsonUMG4fa4=', 'adharcard');
 
 --
 -- Indexes for dumped tables

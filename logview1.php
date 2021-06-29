@@ -14,20 +14,18 @@ require('database.php');
 	body{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-image:url("https://images.unsplash.com/photo-1583175142872-c31e3ee80a8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-color:black;
 }     
   *{
     margin: 0;
   }
 .header{
   width: 100%;
- 
-  background-color: #BC9B8D;
-  color:white;
+   color:yellow;
 }
 .header h1{
   text-align: center;
-  color: white;
+  color:yellow;
   text-decoration: none;
   font-size: 38px;
   letter-spacing: 2px;
@@ -40,8 +38,8 @@ tr{
   font-weight: bold;
 }
 th{
-  color:white;
-  background-color: #5E5754;
+  color:black;
+  background-color: white;
 }
 a{
 	font-size: 20px;
@@ -94,7 +92,7 @@ $result = mysqli_query($conn,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
 <style>
 	td{
-		color:black;
+		color:white;
 	}
 </style>
 <tr><td align="center"><?php echo $count; ?></td>

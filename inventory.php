@@ -36,18 +36,16 @@ function googleTranslateElementInit() {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&Cinzel">
+<link rel="stylesheet" href="css/style2.css">
 
-<div class="header">
-<h1> INVENTORY </h1>
-</div>
     <style>
-      *{
+   *{
     margin: 0;
   }
 .header{
   width: 100%;
   padding: -20px;
-  background-color: #BC9B8D;
+  background-color: black;
   color:white;
 }
 .header h1{
@@ -62,26 +60,45 @@ function googleTranslateElementInit() {
 body{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-image:url("https://images.unsplash.com/photo-1583175142872-c31e3ee80a8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-color: black;
 }     
 tr{
   font-size: 20px;
   font-weight: bold;
+  color: white;
 }
 th{
-  color:white;
-  background-color: #5E5754;
+  color:black;
+  background-color: white;
 }
-    
-
-
-
+table{
+    border: 1px solid white;
+}
      
     </style> 
 </head> 
 
+<div class="nav-bar" style="padding-left: 0px;">
+        <span onclick="showMenu()" style="cursor: pointer;"><i class="fa fa-bars fa-2x"  style="color: white;margin-left: 30px;"></i></span>
+      
+        <div class="nav-logo">
+      
+          <img src="./images/logonew.png" />
+        </div>
+              <div class="nav-links" id="nav-links">
+              <a onclick="closeMenu()"><i class="fa fa-close" ></i></a>  
+                <ul>
+                  <a href="inventory.php"><li>View Inventory</li></a>
+                  <a href="dashboard.php"><li>Manage Inventory</li></a>
+                  <a href="logdashboard.php"><li>Access Log Book</li></a>
+                  <a href="index.php"><li>Bill Generation</li></a>
+                </ul>
+                <!-- <a href="user.html"><button type="button" class="btn">My Profile</button> </a> -->
+              </div>
+      </div>
+      <h1 style="text-align: center;color: white;font-size: 500%;">Inventory</h1>
 <div class="container">           
-  <table class="table table-striped">
+<table class="table">
     
         
             <tr> 
@@ -98,7 +115,6 @@ th{
                 <td><?php echo $rows['Products'];?></td> 
                 <td><?php echo $rows['Quantity(unit/kg)'];?></td> 
                 <td><?php echo $rows['Price(unit/kg)'];?></td> 
-    
             </tr> 
             <?php 
                 } 

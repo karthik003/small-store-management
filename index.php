@@ -1,6 +1,5 @@
 <?php 
 session_start();
-include('header.php');
 $loginError = '';
 if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 	include 'Invoice.php';
@@ -18,10 +17,18 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
 	}
 }
 ?>
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&Cinzel">
 <title>LOGIN </title>
 
 <script src="js/invoice.js"></script>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600&Cinzel">
 <style>
     body{
     margin: 0;
@@ -31,7 +38,7 @@ if (!empty($_POST['email']) && !empty($_POST['pwd'])) {
     width: 100%;
     height: 100%;
     margin-top: 25px;
-    background: url("https://images.pexels.com/photos/1072179/pexels-photo-1072179.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+    background-color:black;  
     top: 0;
     display: table;
     background-size: cover;
@@ -104,39 +111,30 @@ a{
     
     </style>
 
-</head>
+<body>
 <div align="right">
 <div id="google_translate_element"></div>
-<span><script type="text/javascript">
-//<![CDATA[
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-//]]>
-</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</script></span></div>
+
 <div class="form">
-<b><a href="welcome.html">Back to home</a> </b>
+<b><a href="welcome.html">Back to Home</a> </b>
 </div>
 		<div class="content">
 		<h1>Invoice User Login</h1>	
 		<br>	
 		<form method="post" action="">
-			<div class="form-group">
-			<?php if ($loginError ) { ?>
-				<div class="alert alert-warning"><?php echo $loginError; ?></div>
-			<?php } ?>
-			</div>
 		
 				<input name="email" id="email" type="text" class="form-control" placeholder="Username" autofocus="" required>
 				<br>
 				
-				<input type="password" class="form-control" name="pwd" placeholder="Password" required>
+				<input type="password" class="form-control" name="pwd" placeholder="Password" required><br>
+        <div>
+			<?php if ($loginError ) { ?>
+				<div class="alert alert-warning"><?php echo $loginError; ?></div>
+			<?php } ?>
+			</div>
 				<br>
-				<button name="submit" id="submit" type="submit" value="Submit">Login</button>
+				<button name="submit" id="submit" type="submit" value="Submit" style="background-color:yellow; color:#000000; font-size: 25px">Login</button>
+        
 			</div>
 		</form>
 		<br>
@@ -144,5 +142,14 @@ function googleTranslateElementInit() {
 	</div>		
 </div>		
 </div>
-
-<?php include('footer.php');?>
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script>
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>

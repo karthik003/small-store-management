@@ -14,7 +14,7 @@ require('database.php');
 	body{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-image:url("https://images.unsplash.com/photo-1583175142872-c31e3ee80a8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-color:black;
 }     
   *{
     margin: 0;
@@ -72,7 +72,7 @@ function googleTranslateElementInit() {
 | <a href="loginsert.php">Insert New Record</a> 
 
 <div class="header">
-<h1>View Records</h1>
+<h1 style="background-color:black">View Records</h1>
 </div>
 <br>
 <table width="100%" border="1" style="border-collapse:collapse;">
@@ -91,10 +91,11 @@ function googleTranslateElementInit() {
 $count=1;
 $sel_query="Select * from customerdetails,invoice_order WHERE customerdetails.Customer_Name=invoice_order.order_receiver_name";
 $result = mysqli_query($conn,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { ?>
+while($row = mysqli_fetch_assoc($result)) 
+{ ?>
 <style>
 	td{
-		color:black;
+		color:white;
 	}
 </style>
 <tr><td align="center"><?php echo $count; ?></td>

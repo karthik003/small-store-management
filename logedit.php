@@ -21,7 +21,7 @@ $row = mysqli_fetch_assoc($result);
     width: 100%;
     height: 100%;
     margin-top: 25px;
-    background: url("https://images.pexels.com/photos/3214110/pexels-photo-3214110.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg");
+    background-color:black;
     top: 0;
     display: table;
     background-size: cover;
@@ -109,10 +109,10 @@ function googleTranslateElementInit() {
 </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </script></span></div>
 <div class="form">
-<p><a href="logdashboard.php">Dashboard</a> 
-| <a href="loginsert.php">Insert New Record</a> 
+<p><a href="logdashboard.php" style="color:yellow">Dashboard</a> 
+| <a href="loginsert.php" style="color:yellow">Insert New Record</a> 
 | 
-<h1>Update Record</h1>
+<h1 style="color:yellow">Update Record</h1>
 <?php
 $status = "";
 if(isset($_POST['new']) && $_POST['new']==1)
@@ -144,7 +144,7 @@ required value="<?php echo $row['Phone Number'];?>" />
 required />
 <br>
 <br>
-<button name="submit" id="submit" type="submit" value="Update">Update</button>
+<button name="submit" id="submit" type="submit" value="Update" style="background-color:yellow; color:#000000; font-size: 25px">Update</button>
 </form>
 <?php } ?>
 </div>

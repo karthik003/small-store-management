@@ -29,10 +29,11 @@ if(isset($_POST['new']) && $_POST['new']==1){
     width: 100%;
     height: 100%;
     margin-top: 25px;
-    background: url("https://images.pexels.com/photos/3473569/pexels-photo-3473569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg") no-repeat 50% 50%;
+    background-color:black;
     top: 0;
     display: table;
     background-size: cover;
+    color:yellow;
 }
 .content h1{
     font-family: 'Raleway', sans-serif;
@@ -104,38 +105,36 @@ a{
 
 <div align="right">
 <div id="google_translate_element"></div>
-<span><script type="text/javascript">
-//<![CDATA[
+</div>
+</head>
+<body>
+       
+<div class="form">
+<div>
+ <a href="welcome.html" style="color:yellow; font-size: 25px">Back to home</a>
+| <a href="dashboard.php" style="color:yellow; font-size: 25px">Dashboard</a> 
+| <a href="view.php" style="color:yellow; font-size: 25px">View Records</a> 
+</div>
+<div class="content">
+<h1 style="color:yellow; font-size: 25px">Insert New Record</h1>
+<form name="form" method="post" action="insert.php"> 
+<input type="hidden" name="new" value="1" />
+<input type="text" name="product" placeholder="Enter Product" required /><br><br>
+<input type="number" name="quan" placeholder="Enter Quantity" required /><br><br>
+<input type="number" name="price" placeholder="Enter Price" required /><br><br>
+<button name="submit" id="submit" type="submit" value="Submit" style="background-color:yellow; color:#000000; font-size: 25px">Submit</button>
+</form>
+<p style="color:#FF0000;"><?php echo $status; ?></p>
+</div>
+</div>
+
+<script type="text/javascript">
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({
     pageLanguage: 'en',
     layout: google.translate.TranslateElement.InlineLayout.SIMPLE
   }, 'google_translate_element');
 }
-//]]>
 </script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</script></span></div>
-</head>
-<body>
-       
-<div class="form">
-    <div class="a">
- <a href="welcome.html">Back to home</a>
-| <a href="dashboard.php">Dashboard</a> 
-| <a href="view.php">View Records</a> 
-</div>
-<div class="content">
-<h1>Insert New Record</h1>
-<form name="form" method="post" action=""> 
-<input type="hidden" name="new" value="1" />
-<input type="text" name="product" placeholder="Enter Product" required /><br><br>
-<input type="number" name="quan" placeholder="Enter Quantity" required /><br><br>
-<input type="number" name="price" placeholder="Enter Price" required /><br><br>
-<button name="submit" id="submit" type="submit" value="Submit">Submit</button>
-</form>
-<p style="color:#FF0000;"><?php echo $status; ?></p>
-</div>
-</div>
-
 </body>
 </html>

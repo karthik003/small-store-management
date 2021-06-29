@@ -10,7 +10,7 @@ $invoice->checkLoggedIn();
 <link href="css/style1.css" rel="stylesheet">
 <style>
  body {
-         background-color: #BBD7D0;
+         background-color: black;
          background-position: absolute;
          background-repeat: no-repeat;
          background-size: cover;
@@ -39,7 +39,7 @@ function googleTranslateElementInit() {
 </script></span></div>
 
 <div class="container">		
-<h1 class="title">Invoice System</h2>
+<h1 class="title" style="color:yellow">Invoice System</h2>
 <?php include('menu.php');?>			  
 <table id="data-table" class="table table-condensed table-striped">
 <thead>

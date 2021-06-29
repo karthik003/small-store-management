@@ -31,12 +31,13 @@ function googleTranslateElementInit() {
 <link href="css/style1.css" rel="stylesheet">
 <style>
 	body {
-         background-color: #C6DFD9;
+         background-color: black;
          background-position: absolute;
          background-repeat: no-repeat;
          background-size: cover;
          margin: 0;
          padding: 0;
+		 color:white
         }
 	
 	</style>

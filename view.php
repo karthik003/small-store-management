@@ -14,7 +14,8 @@ require('database.php');
 	body{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
-    background-image:url("https://images.unsplash.com/photo-1583175142872-c31e3ee80a8c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+    background-color:black;
+    color:white;
 }     
   *{
     margin: 0;
@@ -37,6 +38,7 @@ require('database.php');
 tr{
   font-size: 20px;
   font-weight: bold;
+  
 }
 th{
   color:white;
@@ -48,26 +50,17 @@ a{
 td{
 	font-weight: normal;
 }
-    
+  table{
+    border:1px solid white
+  }  
 </style>
-<div align="right">
-<div id="google_translate_element"></div>
-<span><script type="text/javascript">
-function googleTranslateElementInit() {
-  new google.translate.TranslateElement({
-    pageLanguage: 'en',
-    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-  }, 'google_translate_element');
-}
-</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-</script></span></div>
 <body>
 <div class="form">
 | <a href="welcome.html">Back to home</a>
 | <a href="dashboard.php">Dashboard</a>
 | <a href="insert.php">Insert New Record</a>  
 <div class="header">
-<h1>View Records</h1>
+<h1 style="background-color:black">View Records</h1>
 </div>
 <table width="100%" border="1" style="border-collapse:collapse;">
 <thead>
@@ -83,12 +76,12 @@ function googleTranslateElementInit() {
 <tbody>
 <?php
 $count=1;
-$sel_query="Select * from inventory ORDER BY id ASC;";
+$sel_query="Select * from inventory;";
 $result = mysqli_query($conn,$sel_query);
 while($row = mysqli_fetch_assoc($result)) { ?>
 <style>
 	td{
-		color:black;
+		color:white;
 	}
 </style>
 <tr><td align="center"><?php echo $count; ?></td>
@@ -107,6 +100,16 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 </tbody>
 </table>
 </div>
+
+<div id="google_translate_element"></div>
+<script>function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'en',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+  }, 'google_translate_element');
+}
+</script><script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</script>
 </body>
 
 </html>

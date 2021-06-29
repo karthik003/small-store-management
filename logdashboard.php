@@ -128,12 +128,12 @@ require('database.php');
           <div class="nav-links" id="nav-links">
           <a onclick="closeMenu()"><i class="fa fa-close" ></i></a>  
             <ul>
-            <a href="inventorygoods.html"><li>View Inventory</li></a>
+            <a href="inventory.php"><li>View Inventory</li></a>
               <a href="dashboard.php"><li>Manage Inventory</li></a>
               <a href="logdashboard.php"><li>Access Log Book</li></a>
               <a href="index.php"><li>Bill Generation</li></a>
             </ul>
-            <a href="user.html"><button type="button" class="btn">My Profile</button> </a>
+            <!-- <a href="user.html"><button type="button" class="btn">My Profile</button> </a> -->
           </div>
   </div>
         <div class="in1">

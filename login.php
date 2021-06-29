@@ -53,12 +53,12 @@ exit;
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 <!--===============================================================================================-->
 </head>
-<body>
+<body style="background-color: black;">
 	
 	<div class="limiter">
-		<div class="container-login100" style="background-image: url('images/bg-02.jpg');">
+	<div class="container-login100" style="background-image: url('images/bg-02.jpg');">
 			<div class="wrap-login100 p-t-30 p-b-50">
-				<span class="login100-form-title p-b-41">
+			<span class="login100-form-title p-b-41" style="color: yellow;">
 					Account Login
 				</span>
 				<form class="login100-form validate-form p-b-33 p-t-5" name="form1" method="POST">
@@ -74,7 +74,7 @@ exit;
 					</div>
 
 					<div class="container-login100-form-btn m-t-32">
-						<input name="submit" type="submit" id="submit" value="Login" style="width: 50%; background-color:grey;border-radius: 12px;font-weight: bold;"><br>
+						<input name="submit" type="submit" id="submit" value="Login"  style="cursor:pointer;width: 50%; background-color:yellow;border-radius: 12px;font-weight: bold;height: 40px;"><br>
 						<br>
 
 					</div>

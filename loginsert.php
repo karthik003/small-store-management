@@ -29,7 +29,7 @@ if(isset($_POST['new']) && $_POST['new']==1){
     width: 100%;
     height: 100%;
     margin-top: 25px;
-    background: url("https://images.pexels.com/photos/2885320/pexels-photo-2885320.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940.jpg");
+    background-color:black;
     top: 0;
     display: table;
     background-size: cover;
@@ -118,12 +118,11 @@ function googleTranslateElementInit() {
 </head>
 <body>
 <div class="form">
-<a href="welcome.html">Back to home</a> 
-| <a href="logdashboard.php">Dashboard</a> 
-| <a href="logview.php">View Records</a> 
-
+<a href="welcome.html" style="color:yellow; font-size: 25px">Back to home</a>
+| <a href="logdashboard.php" style="color:yellow; font-size: 25px">Dashboard</a> 
+| <a href="logview.php" style="color:yellow; font-size: 25px">View Records</a> 
 <div>
-<h1>Insert New Record</h1>
+<h1 style="color:yellow; font-size: 25px">Insert New Record</h1>
 <form name="form" method="post" action=""> 
 <input type="hidden" name="new" value="1" />
 <input type="text" name="custname" placeholder="Enter Customer Name" required /><br>
@@ -132,7 +131,7 @@ function googleTranslateElementInit() {
 <br>
 <input type="number" name="amtdue" placeholder="Enter Amount Due" required /><br>
 <br>
-<button name="submit" id="submit" type="submit" value="Submit">Submit</button>
+<button name="submit" id="submit" type="submit" value="Submit" style="background-color:yellow; color:#000000; font-size: 25px">Submit</button>
 </form>
 <p style="color:#FF0000;"><?php echo $status; ?></p>
 </div>
